@@ -1,4 +1,5 @@
 <?php
+
 require("./anti_ddos/index.php");
 /**
  * The directory in which your application specific resources are located.
@@ -57,21 +58,39 @@ error_reporting(E_ALL | E_STRICT);
 define('DOCROOT', realpath(dirname(__FILE__)).DIRECTORY_SEPARATOR);
 
 // Make the application relative to the docroot, for symlink'd index.php
-if ( ! is_dir($application) AND is_dir(DOCROOT.$application))
+if ( ! is_dir($application) AND is_dir(DOCROOT.$application)){
 	$application = DOCROOT.$application;
+	define('APPPATH', realpath($application).DIRECTORY_SEPARATOR);
+}else{
+	define('APPPATH', realpath($application).DIRECTORY_SEPARATOR);
+
+}
+//echo APPPATH; die;
 
 // Make the modules relative to the docroot, for symlink'd index.php
-if ( ! is_dir($modules) AND is_dir(DOCROOT.$modules))
+if ( ! is_dir($modules) AND is_dir(DOCROOT.$modules)){
 	$modules = DOCROOT.$modules;
+	define('MODPATH', realpath($modules).DIRECTORY_SEPARATOR);
+}else{
+	define('MODPATH', realpath($modules).DIRECTORY_SEPARATOR);
+}
+
 
 // Make the system relative to the docroot, for symlink'd index.php
-if ( ! is_dir($system) AND is_dir(DOCROOT.$system))
+if ( ! is_dir($system) AND is_dir(DOCROOT.$system)){
 	$system = DOCROOT.$system;
+	define('SYSPATH', realpath($system).DIRECTORY_SEPARATOR);
+
+}else{
+	define('SYSPATH', realpath($system).DIRECTORY_SEPARATOR);
+
+}
+
 
 // Define the absolute paths for configured directories
-define('APPPATH', realpath($application).DIRECTORY_SEPARATOR);
-define('MODPATH', realpath($modules).DIRECTORY_SEPARATOR);
-define('SYSPATH', realpath($system).DIRECTORY_SEPARATOR);
+
+
+ 
 
 // Clean up the configuration vars
 unset($application, $modules, $system);
@@ -99,6 +118,7 @@ if ( ! defined('KOHANA_START_MEMORY'))
 }
 
 // Bootstrap the application
+
 require APPPATH.'bootstrap'.EXT;
 
 /**
