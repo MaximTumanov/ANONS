@@ -1843,9 +1843,38 @@ h1.ttl{
 
 /*ADD EVENT*/
 
+.price_changer_box{
+	margin-top: 40px;
+}
+
+.price_changer_box div{
+	height: 35px;
+	display: inline;
+	cursor: pointer;
+}
+
+.price_changer{
+	padding: 3px 5px;
+	padding: 5px 10px;
+	background-color: #FFFFDA;
+	border: 1px solid #F4E4F4;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	line-height: 35px;
+}
+
+.price_changer.active{ background-color: #FFFFAB; color: #333; }
+
 .row1 .my_event_add{
 	float: left;
 	height: 55px;
+	padding: 0 6px 0 0;
+	width: 250px;
+}
+
+.row1-1 .my_event_add{
+	float: left;
 	padding: 0 6px 0 0;
 	width: 250px;
 }
@@ -1856,7 +1885,7 @@ h1.ttl{
 	padding: 0 0 6px;	
 }
 
-.row1 .my_event_add span.default{
+.row1 .my_event_add span.default, .row1-1 .my_event_add span.default{
 	position: absolute;
 	color: #999;
 	margin: 5px 0 0 8px	
@@ -1866,7 +1895,7 @@ h1.ttl{
 	color: red;
 }
 
-.row1 .my_event_add input{
+.row1 .my_event_add input, .row1-1 .my_event_add input{
 	border: 1px solid #B1BED0;
 	padding: 5px 0 5px 9px;
 	height: 16px;
@@ -1879,6 +1908,15 @@ h1.ttl{
 	padding: 5px 0 5px 9px;
 	height: 200px;
 	width: 240px;
+}
+
+.row1 .my_event_add select{
+	float: left;
+	width: 240px;
+	border: 1px solid #B1BED0;
+	padding: 0 0 0 5px;
+	height: 28px;
+	color: #999;
 }
 
 .my_event_add .datepicker, .my_event_add select{
@@ -1941,8 +1979,8 @@ table.admintable td { padding: 3px; }
 	position: absolute;
 	top: 100px;
 	right: 30px;
-	height: 145px;
-	width: 120px;
+	height: 160px;
+	width: 110px;
 }
 
 .row3 .loader{
