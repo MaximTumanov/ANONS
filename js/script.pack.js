@@ -1051,8 +1051,8 @@ $(function () {
               $('#image_hidden').val(file);
               var base64str = $.base64.encode("events/events/"+file+img_attr);
               $('#block_for_image')
-              	.removeClass('img_small')
-              	.html('<img class="img_small" src="http://'+path_to_img+'/img.php?p='+base64str+'">');
+              	.removeClass('event_img')
+              	.html('<img class="event_img" src="http://'+path_to_img+'/img.php?p='+base64str+'">');
               
               this.enable();
             }
