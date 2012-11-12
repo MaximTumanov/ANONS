@@ -98,7 +98,7 @@ i+"</li>"),t.css({background:"url("+c.bulletThumbLocation+A+") no-repeat"});q.ch
 
 var host = 'http://' + window.location.host + '/',
 	path_to_img = 'adminka.anons.dp.ua',
-	img_attr = '?w=110&h=160&tc&ns',
+	img_attr = '?w=110&h=160&tc',
 	dialog, calendar, social_nets, user, lang = 'ru', login_dialog;
 
 if (typeof use_filtering == undefined) {
