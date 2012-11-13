@@ -471,8 +471,8 @@ body.fix_toolbar .header{
 	-weblit-border-radius: 0 0 5px 5px;
 }
 #calendar table caption * { color:white; line-height:35px; text-decoration:none; }
-#calendar table caption .arrow { font-size:20px; position:absolute; margin:-1px 10px; }
-#calendar table caption .arrow.prev { left:0; }
+#calendar table caption .arrow { font-size:20px; /*position:absolute;*/ margin:-1px 15px; }
+#calendar table caption .arrow.prev { /*left:0;*/ }
 #calendar table caption .arrow.next { right:0; }
 #calendar tr:first-child td { border:0; }
 #calendar td { text-align:center; font-size:13px !important; border-top:1px dashed silver; color:#666; padding-top: 2px;}
