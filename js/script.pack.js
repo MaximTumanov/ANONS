@@ -883,10 +883,19 @@ $(function () {
 		});
 	}
 
-	$('.pointer').live('click mousedown',function (event) {
+	$('.pointer a, .p_href a').click(function(event){
     event.preventDefault();
     event.stopPropagation();
-		((event.keyCode == 0 || event.keyCode == undefined) && event.button == 1 ? window.open($(this).attr('href'), "_blank") : window.location.href = $(this).attr('href'));
+    event.cancelBubble = true;
+	});
+
+	$('.pointer').live('mousedown',function (event) {
+    event.preventDefault();
+    event.stopPropagation();
+    event.cancelBubble = true;
+		( ( (event.keyCode == 0 || event.keyCode == undefined) && event.button == 1 ) || ( event.ctrlKey ) 
+			? window.open($(this).attr('href'), "_blank") 
+			: window.location.href = $(this).attr('href'));
 	});
 	
 	$('#search #text').bind('keyup', function (e) {
@@ -998,11 +1007,11 @@ $(function () {
 	$('#log').focus_blur('Логин');
 	$('#pass').focus_blur('Пароль');
 	
-	$('.p_href').live('click mousedown', function (event) {
+	$('.p_href').live('mousedown', function (event) {
 		event.preventDefault();
 		event.stopPropagation();
 		var href = $(this).attr('href');
-		((event.keyCode == 0 || event.keyCode == undefined) && event.button == 1 ? window.open(href, '_blank') : window.location.href = href);
+		(((event.keyCode == 0 || event.keyCode == undefined) && event.button == 1) || (event.ctrlKey) ? window.open(href, '_blank') : window.location.href = href);
 		$('body').css('cursor', 'default');
 	});
 	
