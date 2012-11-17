@@ -12,6 +12,20 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	font-size: 18px;
 }
 
+.free_price_title{
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	width: 110px;
+	text-align: center;
+	padding: 5px 0;
+	border-radius: 5px 5px 0 0;
+}
+
+.free_price_title.inside{
+	margin: 1px 0 0 8px;
+}
+
 .users_login_form{
 	padding-top: 50px!important;
 }
@@ -1225,6 +1239,12 @@ div.button.image{
 	margin: 15px 0;
 }
 
+#google_maps_partner{
+	height: 600px;
+	width: 100%;
+	margin: 15px 0;
+}
+
 #google_maps.hide{
 	height: 0px!important;
 }
@@ -2156,6 +2176,34 @@ table.admintable td { padding: 3px; }
 
 .a_demo_two:active::before {
  top:-2px;
+}
+
+#partners_list{
+	margin: 50px 0 25px 0;
+}
+
+#partners_list .partner{
+	cursor: pointer;
+	float: left;
+	margin: 0 50px 50px 0; 
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	box-shadow: 0 0 7px #B2A8B9;
+	-moz-box-shadow: 0 0 7px #B2A8B9;
+	-weblit-box-shadow: 0 0 7px #B2A8B9;
+}
+
+#partners_list .partner:hover{
+	box-shadow: 0 0 7px #764D91;
+	-moz-box-shadow: 0 0 7px #764D91;
+	-weblit-box-shadow: 0 0 7px #764D91;	
+}
+
+#partners_list .partner img{
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
 }
 
 /*--*/
