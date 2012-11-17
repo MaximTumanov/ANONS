@@ -1,3 +1,6 @@
+Header set X-Message "Hi competitors :)"
+Header set X-Powered-By "ninja 80+ level"
+
 <filesMatch "\.(jpg|png|jpeg|gif)$">
 Header set Cache-Control "max-age=2592000, public, must-revalidate"
 </filesMatch>

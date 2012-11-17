@@ -753,6 +753,18 @@ $.fn.bind_input = function () {
 
 $(function () {
 
+	if($('#partners_list').length){
+		var partner_box = $('#partners_list')
+			,	elms = partner_box.find('.partner');
+
+		elms.click(function(){
+			var el = $(this)
+				, info = el.data('info');
+
+			console.log(info.latlng);
+		})
+	}
+
 	$('.price_changer').click(function(){
 		var spans = $('.price_changer')
 			,	input = $('#price')
@@ -912,6 +924,7 @@ $(function () {
 	});
 	
 	if ($('#google_maps').length && !$('#google_maps').hasClass('hide')) { createMap() }
+	if ($('#google_maps_partner').length) { createMap() }
 	
 	$('#show_google_maps').click(function () {
 		var el = $('#google_maps');
