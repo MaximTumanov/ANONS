@@ -854,17 +854,19 @@ div.search a:hover span{
 .img_small{
 	max-width: 120px;
 	border-radius:7px;
-    -webkit-border-radius: 7px;
-    -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
 	box-shadow: 0 0 7px #764D91;
 	-moz-box-shadow: 0 0 7px #764D91;
 	-weblit-box-shadow: 0 0 7px #764D91;
+	width: 110px;
+	height: 160px;
 }
 
 .img_small_my{
 	border-radius:7px;
-    -webkit-border-radius: 7px;
-    -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
 }
 
 .comment.justify{
