@@ -103,7 +103,7 @@ var Pagination = function (use_filtering) {
 		$.each(this.Items, function (i, item){
 			var let = $(item).attr('data-letter').toString(),
 				cat = $(item).attr('data-category').toString();
-
+			
 			if (typeof items_letter[let] == 'undefined') {
 				items_letter[let] = [];
 			}
@@ -117,18 +117,21 @@ var Pagination = function (use_filtering) {
 			items_letter[let].push($(item).parent());
 			
 			items_category[cat].push($(item).parent());
+			
 		});
 
 		this.CACHE['date'] = items_date.sort(function(a, b){
 			return parseInt($(a).attr('data-date')) - parseInt($(b).attr('data-date'))
 		});
-
+		
 		this.CACHE['letter_desc'] = this.sorted(items_letter);
 		this.CACHE['letter_asc'] = this.sorted(items_letter, true);
 		this.CACHE['category'] = this.sorted(items_category);		
 	}
 
 	this.sorted = function (obj, reverse) {
+		
+		
 		var keys = [], k, i, m, len, arr = [];
 		reverse = reverse || (reverse = false)
 
@@ -151,6 +154,7 @@ var Pagination = function (use_filtering) {
 		    	arr.push(obj[k][m][0]);
 		    }
 		}
+		
 		return arr;
 	}
 
