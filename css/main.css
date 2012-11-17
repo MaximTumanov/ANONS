@@ -1328,8 +1328,8 @@ div.button.image{
 	-moz-box-shadow: 0 0 7px #764D91;
 	-weblit-box-shadow: 0 0 7px #764D91;
 	margin-top: 3px;
-	opacity: 0.80;
-	filter:alpha(opacity=80);
+	/*opacity: 0.80;
+	filter:alpha(opacity=80);*/
 }
 
 #places_list .p_href:hover .p_img img{
