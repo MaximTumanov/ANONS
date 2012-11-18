@@ -2197,6 +2197,8 @@ table.admintable td { padding: 3px; }
 	-moz-box-shadow: 0 0 7px #B2A8B9;
 	-weblit-box-shadow: 0 0 7px #B2A8B9;
 	display: inline-block;
+	width: 200px;
+	height: 100px;
 }
 
 #partners_list .partner:hover{
