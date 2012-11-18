@@ -22,6 +22,11 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	border-radius: 5px 5px 0 0;
 }
 
+.event_price{
+	color: #D10C0C!important;
+	font-size: 12px!important;
+}
+
 .free_price_title.inside{
 	margin: 3px 0 0 8px;
 }
