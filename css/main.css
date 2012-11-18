@@ -12,6 +12,19 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	font-size: 18px;
 }
 
+.main_blog{
+	margin-bottom: 25px; 
+}
+
+.main_blog p{
+	padding: 0 25px;
+	line-height: 20px;
+}
+
+.main_blog p span{
+	font-size: 16px;
+}
+
 .free_price_title{
 	position: absolute;
 	background-color: rgba(0, 0, 0, 0.5);
@@ -461,7 +474,7 @@ body.fix_toolbar .header{
 #navigation a.map { background-position:-37px -39px; }
 #navigation a.mail { background-position:-37px -71px; }
 
-#calendar, #search { 
+#calendar, #search, .main_blog { 
 	background:white; 
 	background:rgba(255,255,255,.75); 
 	position:relative; 
@@ -908,7 +921,7 @@ div.search a:hover span{
 	margin: 45px 0 45px 0;
 }
 
-#search h3, #login h3{
+#search h3, #login h3, .main_blog h3{
 	margin-top: 20px;
 	margin-bottom: 15px;
 }
