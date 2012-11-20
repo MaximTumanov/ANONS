@@ -445,6 +445,10 @@ body.fix_toolbar .header{
 	border-top-color: #E85700!important
 }
 
+.header .menu ul li:hover{
+	border-top-color: #E85700!important;
+}
+
 .header .menu ul li a{
 	color: #ccc;
 	text-transform: uppercase;
