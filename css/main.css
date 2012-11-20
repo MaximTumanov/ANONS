@@ -204,6 +204,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 }
 
 .blog_short_text{ padding: 5px 25px 20px 25px; }
+.blog_short_text .color-orang-imp{ color: #E85700!important; }
 .wrapp.blog .asm{ border-bottom: none;  background-color: transparent; }
 .blog_short_title{ padding: 7px 25px !important; background-color: #FDC8A8!important; }
 

@@ -6,7 +6,7 @@ Header set Cache-Control "max-age=2592000, public, must-revalidate"
 </filesMatch>
 
 <filesMatch "\.(css|js)$">
-Header set Cache-Control "max-age=864000, public, must-revalidate"
+Header set Cache-Control "max-age=2592000, public, must-revalidate"
 </filesMatch>
 
 # Turn on URL rewriting
