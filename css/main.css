@@ -2241,6 +2241,18 @@ table.admintable td { padding: 3px; }
 	-moz-border-radius: 5px;
 }
 
+
+@media (max-width: 1200px){
+	body.fix_toolbar .header{
+		position: absolute;
+		width: auto;
+	}
+
+	#footer{
+		width: auto;
+	}
+}
+
 /*--*/
 
 /*
