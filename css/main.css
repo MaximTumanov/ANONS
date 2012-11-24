@@ -912,6 +912,8 @@ div.search a:hover span{
 	color: #666;
 }
 
+.w230px{ width: 230px; }
+
 .justify .who u, .p_info u{
 	color: #333;
 	text-decoration: none;
@@ -919,6 +921,8 @@ div.search a:hover span{
 	display: block;
 	font-size: 13px;
 	text-align: left;
+	background: url(../images/icon_place.gif) no-repeat 0px 2px;
+	padding-left: 17px;
 }
 
 
