@@ -261,12 +261,12 @@ var Pagination = function (use_filtering) {
 		this.build(false);
 		this.rankingClasses();
 		time_slider.init();
-                $('.post_load').lazyload();
+    $('.post_load').lazyload();
 	}
 
 	this.rankingClasses = function () {
 		this.Items.removeClass('asm');
-		$("div[class*=page-]:nth-child(even)").addClass("asm");
+		//$("div[class*=page-]:nth-child(even)").addClass("asm");
 	}
 
 	this.build = function (letter) {

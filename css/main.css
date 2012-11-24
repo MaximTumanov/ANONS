@@ -2252,9 +2252,7 @@ table.admintable td { padding: 3px; }
 		width: auto;
 	}
 
-	.calendar_second_page{ display: none	}
-
-	#top{ display: none }
+	.calendar_second_page, .time_display, #top, #tabs .slider_wrapper{ display: none	}
 }
 
 /*--*/
