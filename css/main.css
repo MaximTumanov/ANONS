@@ -2251,6 +2251,10 @@ table.admintable td { padding: 3px; }
 	#footer{
 		width: auto;
 	}
+
+	.calendar_second_page{
+		display: none;
+	}
 }
 
 /*--*/
