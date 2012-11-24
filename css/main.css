@@ -912,7 +912,7 @@ div.search a:hover span{
 	color: #666;
 }
 
-.justify .who u{
+.justify .who u, .p_info u{
 	color: #333;
 	text-decoration: none;
 	margin: 3px 0;
@@ -1333,8 +1333,8 @@ div.button.image{
 }
 
 #places_list a{
-	text-decoration: none;
-	color: #666;
+	/*text-decoration: none;
+	color: #666;*/
 }
 
 #places_list .place_line{
