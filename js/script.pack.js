@@ -750,6 +750,7 @@ $.fn.bind_input = function () {
 }
 
 $(function () {
+	if( $('.free_price_title').length ) { $('.free_price_title').show(); }
 	if ($('#google_maps').length && !$('#google_maps').hasClass('hide')) { createMap() }
 	
 	$('#show_google_maps').click(function () {
