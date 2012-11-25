@@ -28,3 +28,7 @@ h1.title, h2.title, h3.title{
     progid:DXImageTransform.Microsoft.Shadow(color='#000', Direction=225, Strength=3)
     progid:DXImageTransform.Microsoft.Shadow(color='#000', Direction=315, Strength=3);
 }
+
+#partners_list .partner{
+    border: 1px solid #ccc;
+}
