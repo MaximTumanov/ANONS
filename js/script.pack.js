@@ -817,15 +817,15 @@ $(function () {
 	)
 
 	$('body').css('cursor', 'default');
-	if ($.browser.msie && parseInt($.browser.version) != 9) {
-		var ie = $('#ie'), wrapp = $('#wrapper');
-		$('#top').hide();
-		wrapp.empty();
-		wrapp.html('');
-		wrapp.append(ie);
-		ie.addClass('incvisition').show();
-		return;
-	}
+	// if ($.browser.msie && parseInt($.browser.version) != 9) {
+	// 	var ie = $('#ie'), wrapp = $('#wrapper');
+	// 	$('#top').hide();
+	// 	wrapp.empty();
+	// 	wrapp.html('');
+	// 	wrapp.append(ie);
+	// 	ie.addClass('incvisition').show();
+	// 	return;
+	// }
 
 	if($('a.has_tooltip').length > 0){
 		$.each($('a.has_tooltip'), function(){
