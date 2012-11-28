@@ -122,6 +122,9 @@ var i18n = {
 	},
 	add_event_dialog: {
 		ru: 'Событие добавлено на модерацию'
+	},
+	add_event_dialog_without_moderation: {
+		ru: 'Событие опубликовано'
 	}
 }
 
@@ -855,7 +858,7 @@ $(function () {
 	$('.bind_input').bind_input();
 
 	if(typeof(show_add_event_dialog) != 'undefined' && show_add_event_dialog === true) {
-		dialog.show(i18n.add_event_dialog[lang], 'dialog_info');
+		dialog.show( (show_add_event_dialog_without_moderation ? i18n.add_event_dialog_without_moderation[lang] : i18n.add_event_dialog[lang] ), 'dialog_info');
 	}
 
 	if ($("#tabs").length) {
