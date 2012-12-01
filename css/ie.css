@@ -1,4 +1,4 @@
-.img_small, #places_list .p_img img, .event .event_img, .event .films_img {
+/*.img_small, #places_list .p_img img, .event .event_img, .event .films_img {
     filter:
     progid:DXImageTransform.Microsoft.Shadow(color='#764D91', Direction=45, Strength=3)
     progid:DXImageTransform.Microsoft.Shadow(color='#764D91', Direction=135, Strength=3)
@@ -8,7 +8,7 @@
     top: -12px;
     left: -12px;
     zoom: 1;
-}
+}*/
 
 h1.title, h2.title, h3.title{
     filter:
