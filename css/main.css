@@ -12,6 +12,8 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	font-size: 18px;
 }
 
+.skype_pnh_logo_img{ display: none; }
+
 .main_blog{
 	margin-bottom: 25px; 
 }
