@@ -29,6 +29,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 .free_price_title{
 	position: absolute;
+	background: #929292\0/;;
 	background-color: rgba(0, 0, 0, 0.5);
 	color: white;
 	width: 110px;
@@ -47,6 +48,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 .free_price_title.inside{
 	margin: 3px 0 0 8px;
+	margin: -3px 0 0 2px\0/;
 }
 
 .users_login_form{
