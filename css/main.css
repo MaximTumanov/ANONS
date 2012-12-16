@@ -985,9 +985,9 @@ div.button, .cinema_go.button{
     background-image: -webkit-gradient(linear,left bottom, left top, color-stop(0, #F8F8CC),color-stop(1, white));
     background-image: -moz-linear-gradient(center bottom, #F8F8CC 0, white 100%);
     background-image: -o-linear-gradient(center bottom, #F8F8CC 0, white 100%); */
-   background-image: -webkit-gradient(linear,left bottom, left top, color-stop(0, #ADFF00),color-stop(1, white));
-    background-image: -moz-linear-gradient(center bottom, #ADFF00 0, white 100%);
-    background-image: -o-linear-gradient(center bottom, #ADFF00 0, white 100%);
+   background-image: -webkit-gradient(linear,left bottom, left top, color-stop(0, #764D91),color-stop(1, white));
+    background-image: -moz-linear-gradient(center bottom, #764D91 0, white 100%);
+    background-image: -o-linear-gradient(center bottom, #764D91 0, white 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ADFF00');
     cursor: pointer;
 }
