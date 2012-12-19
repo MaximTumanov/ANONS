@@ -12,6 +12,8 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	font-size: 18px;
 }
 
+.skype_pnh_logo_img{ display: none; }
+
 .main_blog{
 	margin-bottom: 25px; 
 }
@@ -27,12 +29,15 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 .free_price_title{
 	position: absolute;
+	background: #929292\0/;
 	background-color: rgba(0, 0, 0, 0.5);
 	color: white;
 	width: 110px;
 	text-align: center;
 	padding: 5px 0;
 	border-radius: 5px 5px 0 0;
+	display: none;
+	z-index: 999;
 }
 
 .event_price{
@@ -204,6 +209,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 }
 
 .blog_short_text{ padding: 5px 25px 20px 25px; }
+.blog_short_text .color-orang-imp{ color: #E85700!important; }
 .wrapp.blog .asm{ border-bottom: none;  background-color: transparent; }
 .blog_short_title{ padding: 7px 25px !important; background-color: #FDC8A8!important; }
 
@@ -442,6 +448,10 @@ body.fix_toolbar .header{
 
 .header .menu ul li.a{
 	border-top-color: #E85700!important
+}
+
+.header .menu ul li:hover{
+	border-top-color: #E85700!important;
 }
 
 .header .menu ul li a{
@@ -907,13 +917,17 @@ div.search a:hover span{
 	color: #666;
 }
 
-.justify .who u{
+.w230px{ width: 230px; }
+
+.justify .who u, .p_info u{
 	color: #333;
 	text-decoration: none;
 	margin: 3px 0;
 	display: block;
 	font-size: 13px;
 	text-align: left;
+	/*background: url(../images/icon_place.gif) no-repeat 0px 2px;
+	padding-left: 17px;*/
 }
 
 
@@ -1328,8 +1342,8 @@ div.button.image{
 }
 
 #places_list a{
-	text-decoration: none;
-	color: #666;
+	/*text-decoration: none;
+	color: #666;*/
 }
 
 #places_list .place_line{
@@ -1353,11 +1367,6 @@ div.button.image{
 	margin-top: 3px;
 	/*opacity: 0.80;
 	filter:alpha(opacity=80);*/
-}
-
-#places_list .p_href:hover .p_img img{
-	opacity: 1;
-	filter:alpha(opacity=100);
 }
 
 #places_list .p_info{
@@ -2105,14 +2114,22 @@ table.admintable td { padding: 3px; }
 }
 
 .main #anonsdpua{
-	background: url(../images/fon_new.png) no-repeat center 120px;
+	/*background: url(../images/fon_new.png) no-repeat center 120px;*/
+	background: url(../images/banner/fon_winter.png) no-repeat center 120px;
 }
 
 #banner{
-	background: url(../images/banner/banner.png);
-	width: 827px;
-	height: 342px;
+	/*background: url(../images/banner/banner.png);*/
+	background: url(../images/banner/listovka_web.png);
+	width: 820px;
+	height: 340px;
 	margin-bottom: 50px;
+	-webkit-border-radius: 7px;
+	        border-radius: 7px;
+	-moz-border-radius: 5px;
+	box-shadow: 0 0 7px #B2A8B9;
+	-moz-box-shadow: 0 0 7px #B2A8B9;
+	-weblit-box-shadow: 0 0 7px #B2A8B9;
 }
 
 .success{
@@ -2208,7 +2225,7 @@ table.admintable td { padding: 3px; }
 #partners_list .partner{
 	cursor: pointer;
 	float: left;
-	margin: 0 50px 50px 0; 
+	margin: 0 10px 50px 15px; 
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -2230,6 +2247,24 @@ table.admintable td { padding: 3px; }
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
+}
+
+
+#qrcode{
+	float: right;
+}
+
+@media (max-width: 1200px){
+	body.fix_toolbar .header{
+		position: absolute;
+		width: auto;
+	}
+
+	#footer{
+		width: auto;
+	}
+
+	.calendar_second_page, #top, #tabs.filters, #qrcode{ display: none	}
 }
 
 /*--*/
