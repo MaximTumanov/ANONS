@@ -2119,17 +2119,10 @@ table.admintable td { padding: 3px; }
 }
 
 #banner{
-	/*background: url(../images/banner/banner.png);*/
-	background: url(../images/banner/listovka_web.png);
-	width: 820px;
-	height: 340px;
-	margin-bottom: 50px;
-	-webkit-border-radius: 7px;
-	        border-radius: 7px;
-	-moz-border-radius: 5px;
-	box-shadow: 0 0 7px #B2A8B9;
-	-moz-box-shadow: 0 0 7px #B2A8B9;
-	-weblit-box-shadow: 0 0 7px #B2A8B9;
+	background: url(../images/banner/banner_winter.png);
+	width: 691px;
+	height: 324px;
+	margin: 0 0 50px 90px;
 }
 
 .success{
