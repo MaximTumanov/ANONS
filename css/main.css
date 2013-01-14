@@ -974,11 +974,12 @@ div.button, .place_go.button{
 	text-align: center;
 	width: 100px;
 	margin: 0 auto;
-	background-image: -webkit-gradient(linear,left bottom, left top, color-stop(0, #ADFF00),color-stop(1, white));
-    background-image: -moz-linear-gradient(center bottom, #ADFF00 0, white 100%);
-    background-image: -o-linear-gradient(center bottom, #ADFF00 0, white 100%);
+   background-image: -webkit-gradient(linear,left bottom, left top, color-stop(0, #764D91),color-stop(1, white));
+    background-image: -moz-linear-gradient(center bottom, #764D91 0, white 100%);
+    background-image: -o-linear-gradient(center bottom, #764D91 0, white 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ADFF00');
     cursor: pointer;
+  margin-left: 15px;
 }
 
 div.button, .cinema_go.button{
@@ -1142,7 +1143,7 @@ div.button.image{
 	color: #666;
 }
 
-.event .event_go, .places .place_go .cinema .cinema_go{
+.event .event_go, .places .place_go .cinema .cinema_go, .event .place_go{
 	color: black;
 	position: relative;
 	top: -5px;
