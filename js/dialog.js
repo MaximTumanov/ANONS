@@ -30,7 +30,7 @@ function Dialog(o) {
  * отображает диалоговое окно
  */
 Dialog.prototype.show = function(text, attrClass, callback) {
-    this.infoBox.addClass(attrClass).text(text);
+    this.infoBox.addClass(attrClass).html(text);
     this.element.size = [this.element.width(), 
                          this.element.height()]; 
     
