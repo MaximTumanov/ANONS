@@ -972,7 +972,7 @@ div.button, .place_go.button{
 	-moz-box-shadow: 0 0 4px #764D91;
 	-weblit-box-shadow: 0 0 4px #764D91;
 	text-align: center;
-	width: 100px;
+	width: 120px;
 	margin: 0 auto;
    background-image: -webkit-gradient(linear,left bottom, left top, color-stop(0, #764D91),color-stop(1, white));
     background-image: -moz-linear-gradient(center bottom, #764D91 0, white 100%);
