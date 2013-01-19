@@ -111,7 +111,7 @@ var toAnonsDate = function (date) {
 
 var i18n = {
 	user_not_found: {
-		ru: "Только для авторизированных пользователей"
+		ru: "Только для <a href='http://anons_dp_ua/users/'>авторизированных</a> пользователей"
 	},
 	event_not_found: {
 		ru: "Извините, но что-то пошло не так!"
