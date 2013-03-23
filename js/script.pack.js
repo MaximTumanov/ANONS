@@ -1177,7 +1177,7 @@ var MyCalendar = function () {
 		
 		$.ajax({
 			url: host + 'events/getEvents',
-			dataType: "txt",
+			dataType: "json",
 			type: "POST",
 			async: false,
 			data: {
