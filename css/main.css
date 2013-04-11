@@ -2257,6 +2257,21 @@ table.admintable td { padding: 3px; }
 #qrcode{
 	float: right;
 }
+.shop_button{
+	
+	position: relative;
+	float: right;
+	cursor: pointer;
+}
+.shop_button img {
+	width: 45px;	
+}
+.shop_button .shop_text {
+	font-size: 20px;
+	top: -13px;
+	left: -5px;
+	position: relative;
+}
 
 @media (max-width: 1200px){
 	body.fix_toolbar .header{
