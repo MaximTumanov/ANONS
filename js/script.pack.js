@@ -1619,14 +1619,14 @@ $(function () {
 				type: "POST",
 				dataType: 'json',
 				success: function (data) {
-					if(check_count >= 300){
+					check_count++;
+					if(check_count >= 60){
 						clearInterval(interval);
 						preloader.hide();
 						proccessing_text.text("Оплата не подтвердилась");
 					}
 
 					if (data.success){
-						check_count++;
 						clearInterval(interval);
 						$('body').append(data.form);
 						$('#confirm_form').submit();
