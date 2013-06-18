@@ -978,7 +978,7 @@ div.button, .place_go.button{
 	margin: 0 auto;
    background-image: -webkit-gradient(linear,left bottom, left top, color-stop(0, #764D91),color-stop(1, white));
     background-image: -moz-linear-gradient(center bottom, #764D91 0, white 100%);
-    background-image: -o-linear-gradient(center bottom, #764D91 0, white 100%);
+    background: -o-linear-gradient(bottom, #764D91 0, white 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ADFF00');
     cursor: pointer;
   margin-left: 15px;
@@ -1004,7 +1004,7 @@ div.button, .cinema_go.button{
     background-image: -o-linear-gradient(center bottom, #F8F8CC 0, white 100%); */
    background-image: -webkit-gradient(linear,left bottom, left top, color-stop(0, #764D91),color-stop(1, white));
     background-image: -moz-linear-gradient(center bottom, #764D91 0, white 100%);
-    background-image: -o-linear-gradient(center bottom, #764D91 0, white 100%);
+    background: -o-linear-gradient(bottom, #764D91 0, white 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ADFF00');
     cursor: pointer;
 }
@@ -2286,6 +2286,225 @@ table.admintable td { padding: 3px; }
 	.calendar_second_page, #top, #tabs.filters, #qrcode{ display: none	}
 }
 
+.backref{text-align: center;}
+
+#pay{ margin: 15px 0 15px 325px; }
+
+#pay .not_autorized{ margin-bottom: 15px; }
+
+#payu_button{
+	margin-top: 10px;
+	background-image: -webkit-gradient(linear,left bottom, left top, color-stop(0, #FFFFAB),color-stop(1, white));
+	background-image: -moz-linear-gradient(center bottom, #FFFFAB 0, white 100%);
+	background: -o-linear-gradient(bottom, #FFFFAB 0%,#ffffff 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#FFFFAB');
+}
+#payu_count{
+	font: 16px arial;
+	width: 60px;
+}
+
+#payment-type {
+	width: 500px;
+	height: 120px;
+	padding: 25px 20px 35px;
+	background-color: #EDEDED;
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+}
+
+.payment-type	{
+	float:left;
+	line-height:25px;
+	margin-right:20px;
+}
+	.payment-type	img{
+		//margin-top:3px;
+	}
+	.payment-type .jqTransformRadio{
+		padding:0;
+		margin-right:1px;
+	}
+
+.contract{
+	float:left;
+}	
+	.contract p{
+		width:200px;
+		float:left;
+		font:11px arial;
+		color:#616161;
+		margin-top:3px;
+	}
+
+	#final-price{
+		height:60px;
+		float:left;
+		position:relative;
+		margin-left:20px;
+		margin-top:20px;
+	}
+	.price-value{
+		font:18px arial;
+		color:#000;
+		float:left;
+		position:relative;
+		width:90px;
+	}
+		.price-value .subtext{
+			width:80px;
+			margin-top:1px;
+		}
+	.price-value-total{
+		width:120px;
+		font:24px arial;
+		color:#E85700;
+		float:left;
+		margin-left:5px;
+	}
+	.sign{
+		float:left;
+		font:18px arial;
+		color:#000;
+		margin:0 5px;
+	}
+
+.subtext {
+font: 11px arial;
+color: #616161;
+margin-top: -3px;
+text-align: left;
+}
+
+
+.jqTransformRadio {
+	background: transparent url(../images/radio1.png) no-repeat 0 50%;
+	vertical-align: middle;
+	height: 19px;
+	width: 18px;
+	display: block;
+	padding: 5px 195px 5px 0;
+	position: relative;
+	z-index: 99;
+}
+
+a.jqTransformCheckbox {
+	background: transparent url(../images/chkbox.gif) no-repeat center top;
+	vertical-align: middle;
+	height: 16px;
+	width: 16px;
+	display: block;
+	margin-right: 8px;
+}
+
+a.jqTransformCheckedBox {
+	background: transparent url(../images/chkbox1.gif) no-repeat;
+}
+
+.jqTransformHidden {
+	display: none;
+}
+
+span.jqTransformCheckboxWrapper {
+	display: block;
+	float: left;
+	margin-top: 5px;
+}
+
+.jqTransformRadioWrapper {
+	float: left;
+	display: block;
+	margin: 0 4px 0;
+}
+
+.proccessing_loader{
+	background: transparent url(../images/ajax-loader.gif) no-repeat;
+	width: 66px;
+	height: 66px;
+	margin: 50px auto;
+}
+
+.not_found{
+	text-align: center;
+	line-height: 24px;
+	font-size: 16px;
+	padding: 25px 0;
+}
+
+.offer{
+	font-weight: bold!important;
+	color: #000!important;
+}
+
+
+
+
+
+
+
+
+
+
+.tip-twitter {
+	opacity:0.8;
+	z-index:1000;
+	text-align:left;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	padding:8px 8px;
+	max-width:200px;
+	color:#fff;
+	background-color:#000;
+	/**
+	 * - If you set a background-image, border/padding/background-color will be ingnored.
+	 *   You can set any padding to .tip-inner instead if you need.
+	 * - If you want a tiled background-image and border/padding for the tip,
+	 *   set the background-image to .tip-inner instead.
+	 */
+}
+.tip-twitter .tip-inner {
+	font:bold 11px/14px 'Lucida Grande',sans-serif;
+}
+
+/* Configure an arrow image - the script will automatically position it on the correct side of the tip */
+.tip-twitter .tip-arrow-top {
+	margin-top:-5px;
+	margin-left:-5px; /* approx. half the width to center it */
+	top:0;
+	left:50%;
+	width:9px;
+	height:5px;
+	background:url(../images/tip-twitter_arrows.gif) no-repeat;
+}
+.tip-twitter .tip-arrow-right {
+	margin-top:-4px; /* approx. half the height to center it */
+	margin-left:0;
+	top:50%;
+	left:100%;
+	width:5px;
+	height:9px;
+	background:url(../images/tip-twitter_arrows.gif) no-repeat -9px 0;
+}
+.tip-twitter .tip-arrow-bottom {
+	margin-top:0;
+	margin-left:-5px; /* approx. half the width to center it */
+	top:100%;
+	left:50%;
+	width:9px;
+	height:5px;
+	background:url(../images/tip-twitter_arrows.gif) no-repeat -18px 0;
+}
+.tip-twitter .tip-arrow-left {
+	margin-top:-4px; /* approx. half the height to center it */
+	margin-left:-5px;
+	top:50%;
+	left:0;
+	width:5px;
+	height:9px;
+	background:url(../images/tip-twitter_arrows.gif) no-repeat -27px 0;
+}
 /*--*/
 
 /*
