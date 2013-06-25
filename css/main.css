@@ -2294,11 +2294,20 @@ table.admintable td { padding: 3px; }
 
 #payu_button{
 	margin-top: 10px;
-	background-image: -webkit-gradient(linear,left bottom, left top, color-stop(0, #FFFFAB),color-stop(1, white));
-	background-image: -moz-linear-gradient(center bottom, #FFFFAB 0, white 100%);
-	background: -o-linear-gradient(bottom, #FFFFAB 0%,#ffffff 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#FFFFAB');
+	background-image: -webkit-gradient(linear,left bottom, left top, color-stop(0, #2CCE16),color-stop(1, white));
+	background-image: -moz-linear-gradient(center bottom, #2CCE16 0, white 100%);
+	background: -o-linear-gradient(bottom, #2CCE16 0%,#ffffff 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#2CCE16');
+	width: 115px;
 }
+
+#payu_button:hover{
+	background-image: -webkit-gradient(linear,left bottom, left top, color-stop(0, #5BD34B),color-stop(1, white));
+	background-image: -moz-linear-gradient(center bottom, #5BD34B 0, white 100%);
+	background: -o-linear-gradient(bottom, #5BD34B 0%,#ffffff 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#5BD34B');
+}
+
 #payu_count{
 	font: 16px arial;
 	width: 60px;
@@ -2306,7 +2315,7 @@ table.admintable td { padding: 3px; }
 
 #payment-type {
 	width: 500px;
-	height: 120px;
+	height: 160px;
 	padding: 25px 20px 35px;
 	background-color: #EDEDED;
 	border-radius: 15px;
@@ -2504,6 +2513,13 @@ span.jqTransformCheckboxWrapper {
 	width:5px;
 	height:9px;
 	background:url(../images/tip-twitter_arrows.gif) no-repeat -27px 0;
+}
+
+
+.pay_logo{
+	background: url(../images/pay_logos.png) no-repeat center;
+	height: 42px;
+	margin-top: 10px;
 }
 /*--*/
 
